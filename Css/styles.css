@@ -1,0 +1,113 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2e2e2e;
+      color: white;
+      padding-top: 50px;  
+      padding-bottom: 40px; 
+    }
+
+    header {
+      background-color: #111;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px; /* fixed height */
+      z-index: 1000;
+    }
+
+    nav a, .auth a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .main-layout {
+      display: flex;
+      height: 600px; 
+    }
+
+    .left-section {
+      flex: 1;
+      background-color: #7f9ca4;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .right-section {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-row {
+      display: flex;
+      flex: 1;
+      height: 50%;
+    }
+
+    .top-row .box {
+      background-color: #7f9ca4;
+      overflow: hidden;
+    }
+
+    .top-row .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .box1 {
+      flex: 2;
+    }
+
+    .box2 {
+      flex: 1;
+    }
+
+.bottom-box {
+  flex: 2;
+  background-color: #000;
+  padding: 20px;
+  font-size: 14px;
+
+  /* ✅ height removed */
+}
+
+
+
+    .box-label {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40px; /* fixed height */
+      line-height: 20px;
+      z-index: 1000;
+    }
